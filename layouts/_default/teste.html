@@ -1,2 +1,6 @@
-{{ range where .Pages "File.Dir" "in" "/teste/" }}
-{{ end }}
+<ul class="contents">
+          {{ range .Paginator.Pages }}
+              <li>{{.Title}}
+              </li>
+          {{ end }}
+          </ul>
