@@ -4,5 +4,5 @@ menu:
   main:
     name: Blog
     weight: 3
-layout: blog
+layout: teste
 ---
