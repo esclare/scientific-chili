@@ -26,4 +26,5 @@ fields:
 pages:
 - content/about.md
 - content/projects/teste/teste-dentro-teste.md
+- content/projects/teste/teste-dentro-teste.md
 - content/style-guide.md
