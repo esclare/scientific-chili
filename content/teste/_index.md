@@ -1,8 +1,8 @@
 ---
-title: Blog
+title: teste
 menu:
   main:
-    name: Blog
+    name: teste
     weight: 3
 layout: teste
 ---
