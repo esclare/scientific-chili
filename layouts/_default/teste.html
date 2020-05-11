@@ -1,1 +1,2 @@
-{{ range (readDir ".") }}{{ .Name }}{{ end }}
+{{ range where .Pages "File.Dir" "in" "/teste/" }}
+{{ end }}
