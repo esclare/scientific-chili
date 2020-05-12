@@ -1,7 +1,5 @@
 <ul>
   {{ range $section, $pages := .Site.Sections }}
-    {{ if ne $section "" }}
-      <li><a href="/{{ $section }}">{{ title $section }}</a></li>
-    {{ end }}
+    <li><a href="/{{ $section }}">{{ title $section }}</a></li>
   {{ end }}
 </ul>
