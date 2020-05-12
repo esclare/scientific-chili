@@ -1,7 +1,7 @@
-{{- if isset .Site.Taxonomies "categories" }}
-{{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+{{- if isset .Site.Taxonomies "geracoes" }}
+{{- if not (eq (len .Site.Taxonomies.geracoes) 0) }}
 <ul>
-  {{- range $name, $items := .Site.Taxonomies.categories }}
+  {{- range $name, $items := .Site.Taxonomies.geracoes }}
   <li><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
   {{- end }}
 </ul>
