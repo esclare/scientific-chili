@@ -36,6 +36,11 @@ fields:
   default: post
   config:
     required: true
+- name: categories
+  type: text
+  config:
+    required: false
+  label: categories
 pages:
 - content/posts/2016-08-22-working-from-home.md
 - content/posts/2017-03-26-interior-designer.md
