@@ -41,6 +41,11 @@ fields:
   config:
     required: false
   label: categories
+- name: tags
+  type: text
+  config:
+    required: false
+  label: tags
 pages:
 - content/posts/2016-08-22-working-from-home.md
 - content/posts/2017-03-26-interior-designer.md
