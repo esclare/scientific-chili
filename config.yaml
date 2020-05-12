@@ -1,6 +1,10 @@
 ---
 title: Stackbit Exto Theme
 baseURL: "/"
+taxonomies:
+  category: categories
+  tag: tags
+  geracao: geracoes
 params:
   color_scheme: light
   accent_color: pink
@@ -16,6 +20,4 @@ params:
     has_social: true
 disableKinds:
 - RSS
-taxonomies:
-  category: categories
-  tag: tags
+
