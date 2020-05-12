@@ -1,6 +1,3 @@
-<ul class="contents">
-          {{ range .Paginator.Pages }}
-              <li>{{.Title}}
-              </li>
-          {{ end }}
-          </ul>
+{{ range where .Pages "Section" "teste" }}
+<p>{{.Title}}</p>
+{{ end }}
