@@ -3,6 +3,7 @@
     {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
       <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
         <ul>
+          {{ if eq "categories" $taxonomyname }}
           {{ range $key, $value := $taxonomy }}
           <li> {{ $key }} </li>
                 <ul>
@@ -10,6 +11,7 @@
                     <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
                 {{ end }}
                 </ul>
+          {{ end }}
           {{ end }}
         </ul>
       </li>
