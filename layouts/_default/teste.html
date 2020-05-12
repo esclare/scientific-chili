@@ -2,7 +2,7 @@
 {{- if not (eq (len .Site.Taxonomies.geracoes) 0) }}
 <ul>
   {{- range $name, $items := .Site.Taxonomies.geracoes }}
-  <li><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+  <li><a href="{{ "geracoes/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
   {{- end }}
 </ul>
 {{- end }}
