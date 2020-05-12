@@ -1,3 +1,3 @@
-{{ range .Site.Sections }}
+{{ range .Site.Sections "Section" "teste"}}
   <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 {{ end }}
