@@ -16,8 +16,6 @@ params:
     has_social: true
 disableKinds:
 - RSS
-- taxonomy
-- taxonomyTerm
 taxonomies:
   category: categories
   tag: tags
