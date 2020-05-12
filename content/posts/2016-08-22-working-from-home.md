@@ -8,7 +8,7 @@ excerpt: >-
   commodo odio aenean sed adipiscing diam donec. Vitae congue mauris rhoncus
   aenean vel elit scelerisque mauris pellentesque.
 layout: post
-category: categories
+category: ["categories"]
 tag: tags
 ---
 
