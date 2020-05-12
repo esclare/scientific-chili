@@ -18,3 +18,6 @@ disableKinds:
 - RSS
 - taxonomy
 - taxonomyTerm
+taxonomies:
+  category: categories
+  tag: tags
