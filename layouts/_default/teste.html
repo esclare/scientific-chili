@@ -1,20 +1,9 @@
-<section>
-  <ul>
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-      <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
-        <ul>
-          {{ if eq "categories" $taxonomyname }}
-          {{ range $key, $value := $taxonomy }}
-          <li> {{ $key }} </li>
-                <ul>
-                {{ range $value.Pages }}
-                    <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-                {{ end }}
-                </ul>
-          {{ end }}
-          {{ end }}
-        </ul>
-      </li>
-    {{ end }}
-  </ul>
-</section>
+{{- if isset .Site.Taxonomies "categories" }}
+{{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+<ul>
+  {{- range $name, $items := .Site.Taxonomies.categories }}
+  <li><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+  {{- end }}
+</ul>
+{{- end }}
+{{- end }}
